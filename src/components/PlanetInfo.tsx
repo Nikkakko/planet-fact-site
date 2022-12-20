@@ -22,9 +22,6 @@ const PlanetInfo: React.FC<PlanetInfoProps> = ({ planet, planetId, name, setName
   const btnNames = ['overview', 'structure', 'geology'];
   const [color, setColor] = useState<string>('');
 
-  console.log(planet);
-  // console.log(name);
-
   useEffect(() => {
     setColor(planet.color);
   }, [planetId]);
