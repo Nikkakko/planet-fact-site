@@ -34,9 +34,21 @@ const Navbar = () => {
       }
     };
 
+    // disable scrolling when isOpen is true
+    const handleScroll = (event: any) => {
+      if (isOpen) {
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isOpen]);
 
   const handleClick = () => {
     setIsOpen(prev => !prev);
@@ -209,7 +221,7 @@ const MobileList = styled.div`
   z-index: 999;
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
+  height: 950px;
   top: 69px;
   left: 0;
   padding: 44px 32px 0 24px;
