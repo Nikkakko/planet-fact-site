@@ -299,6 +299,7 @@ const Button = styled.button<ButtonProps>`
     border: none;
 
     color: ${({ name, btnName, color }) => (name === btnName ? '#fff' : '#ffffff75')};
+
     padding: 0;
 
     &::after {
@@ -334,6 +335,10 @@ const Button = styled.button<ButtonProps>`
 
     span {
       display: none;
+    }
+
+    &:hover {
+      background: none;
     }
   }
 `;
