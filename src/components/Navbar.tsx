@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import Links from '../data.json';
-import burgerMenu from '../../assets/icon-hamburger.svg';
-import chevronIcon from '../../assets/icon-chevron.svg';
+import burgerMenu from '../../public/assets/icon-hamburger.svg';
+import chevronIcon from '../../public/assets/icon-chevron.svg';
 import { BiChevronRight } from 'react-icons/bi';
 
 type Props = {

@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import styled from 'styled-components';
-import backGround from '../../assets/background-stars.svg';
+import backGround from '../../public/assets/background-stars.svg';
 
 const RootLayout = () => {
   return (

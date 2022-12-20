@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { DataType } from '../Types/dataTypes';
-import sourceIcon from '../../assets/icon-source.svg';
-import Links from '../data.json';
+import sourceIcon from '../../public/assets/icon-source.svg';
 
 type PlanetInfoProps = {
   planet: DataType;
