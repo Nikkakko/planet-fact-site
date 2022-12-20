@@ -21,15 +21,15 @@ const RootContainer = styled.div`
   background-image: url(${backGround});
 
   @media (max-width: 1440px) {
-    height: 1024px;
+    height: 100%;
   }
 
   @media (max-width: 768px) {
-    height: 1024px;
+    height: 100%;
   }
 
   @media (max-width: 425px) {
-    height: 900px;
+    height: 100%;
   }
 `;
 
